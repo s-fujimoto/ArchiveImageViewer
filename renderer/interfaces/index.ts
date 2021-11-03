@@ -4,18 +4,19 @@
 //
 // import User from 'path/to/interfaces';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { IpcRenderer } from 'electron';
-
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace NodeJS {
-    interface Global {
-      ipcRenderer: IpcRenderer;
-    }
+  interface Window {
+    viewerApi: ViewerAPI;
   }
 }
 
-export type User = {
-  id: number;
-  name: string;
+export type ViewerAPI = {
+  putFile: (zipFilePath: string) => string[];
+  getImageSource: (filePath: string) => ImageSource;
+};
+
+export type ImageSource = {
+  src: string;
+  width: number;
+  height: number;
 };

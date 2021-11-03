@@ -15,19 +15,21 @@
   "dependencies": {
     "electron-is-dev": "^1.1.0",
     "electron-next": "^3.1.5",
+    "image-size": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dropzone": "^11.4.2",
     "unzipper": "^0.10.11"
   },
   "devDependencies": {
+    "@types/image-size": "^0.8.0",
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.9",
     "@types/react-dom": "^16.9.9",
     "@types/react-dropzone": "^5.1.0",
     "@types/unzipper": "^0.10.4",
-    "electron": "^13",
-    "electron-builder": "^22.9.1",
+    "electron": "^15",
+    "electron-builder": "^22",
     "next": "latest",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.0",
